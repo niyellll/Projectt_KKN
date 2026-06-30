@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern, accessible storytelling website designed for people with low vision." />
+  <title>Stories in Clear Light</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Stories in Clear Light homepage">
+        <span class="brand-mark" aria-hidden="true">●</span>
+        <span>Clear Light Stories</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#features">Accessibility</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="assets/hero-morning-path.svg" alt="A wide calm path at sunrise with soft blue sky and warm yellow light on the horizon." />
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Accessible Visual Story</p>
+        <h1 id="hero-title">A Journey Through Clear Light</h1>
+        <p class="lead">
+          A calm storytelling experience designed with large readable text, strong contrast, spacious layout, and supportive images for readers with low vision.
+        </p>
+        <div class="hero-actions" aria-label="Story actions">
+          <a class="btn btn-primary" href="#story">Start Reading</a>
+          <a class="btn btn-secondary" href="#features">View Accessibility Features</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reader-tools container" aria-labelledby="tools-title">
+      <div>
+        <h2 id="tools-title">Reading Comfort Tools</h2>
+        <p>Adjust the display without losing the story flow. These controls support comfort, not decoration.</p>
+      </div>
+      <div class="tool-buttons" role="group" aria-label="Reading display controls">
+        <button class="tool-button" type="button" data-action="increase-font">Increase Text</button>
+        <button class="tool-button" type="button" data-action="decrease-font">Decrease Text</button>
+        <button class="tool-button" type="button" data-action="toggle-contrast" aria-pressed="false">High Contrast</button>
+      </div>
+      <p class="status-message" id="status-message" aria-live="polite"></p>
+    </section>
+
+    <section class="story container" id="story" aria-labelledby="story-title">
+      <div class="section-heading">
+        <p class="eyebrow">Chapter One</p>
+        <h2 id="story-title">The Road That Became Easier to See</h2>
+        <p>
+          This page demonstrates a clean narrative layout with alternating text and large images. Every image includes alternative text and a caption that supports the meaning of the story.
+        </p>
+      </div>
+
+      <article class="story-block">
+        <div class="story-text">
+          <h3>Morning Begins With Space</h3>
+          <p>
+            The first step of the journey is not speed. It is clarity. The page gives each sentence enough room to breathe, so the reader can move through the story without visual pressure.
+          </p>
+          <p>
+            Large text, steady rhythm, and simple navigation help readers stay focused. Nothing important is hidden inside small icons or low-contrast visual details.
+          </p>
+          <a class="text-link" href="#chapter-two">Continue to the next scene</a>
+        </div>
+        <figure class="story-image">
+          <img src="assets/story-open-window.svg" alt="A bright open window with a dark blue frame, a simple chair, and gentle morning light." />
+          <figcaption>Scene 1: An open room with generous light, symbolizing a calm reading environment.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-block story-block-reverse" id="chapter-two">
+        <div class="story-text">
+          <h3>Images Support the Words</h3>
+          <p>
+            Photographs and illustrations should guide the story, not compete with it. Captions explain why each visual matters, and every visual has text alternatives for assistive technology.
+          </p>
+          <p>
+            The design avoids relying on color alone. Important actions use text labels, clear shapes, strong borders, and consistent placement across the page.
+          </p>
+          <a class="text-link" href="#chapter-three">Read the final scene</a>
+        </div>
+        <figure class="story-image">
+          <img src="assets/story-hands-map.svg" alt="Two hands holding a simple map with thick dark blue lines and a purple route marker." />
+          <figcaption>Scene 2: A clear map with a visible route, representing guidance that is easy to follow.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-block" id="chapter-three">
+        <div class="story-text">
+          <h3>Every Path Has a Clear Ending</h3>
+          <p>
+            A good accessible story respects the reader’s energy. Buttons are large, links are easy to identify, and the footer provides practical information without clutter.
+          </p>
+          <p>
+            The result is modern, calm, inclusive, and easy to navigate. The focus remains on the story, while the interface quietly supports every reader.
+          </p>
+          <a class="btn btn-primary" href="#contact">Contact the Story Team</a>
+        </div>
+        <figure class="story-image">
+          <img src="assets/story-evening-lamp.svg" alt="A warm yellow lamp beside a book on a white table, with a calm dark blue background." />
+          <figcaption>Scene 3: A simple reading corner, showing comfort at the end of the journey.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="features container" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">Accessibility Features</p>
+        <h2 id="features-title">Built for Low-Vision Reading</h2>
+        <p>
+          The interface uses practical accessibility principles: high contrast, large touch targets, clear structure, predictable spacing, and readable typography.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">Aa</span>
+          <h3>Large Readable Type</h3>
+          <p>Body text starts large, with comfortable line height and paragraph spacing for easier scanning.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">◧</span>
+          <h3>High Contrast</h3>
+          <p>White background, dark text, dark blue headings, and visible focus states improve readability.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">□</span>
+          <h3>Large Click Areas</h3>
+          <p>Buttons and navigation items have generous size, spacing, rounded corners, and clear labels.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">↕</span>
+          <h3>Consistent Layout</h3>
+          <p>Sections follow a predictable pattern so readers can understand where they are on the page.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout container" aria-labelledby="callout-title">
+      <div>
+        <h2 id="callout-title">Ready to publish your own story?</h2>
+        <p>Replace the sample text and SVG images with your own photographs, captions, and narrative sections.</p>
+      </div>
+      <a class="btn btn-accent" href="#top">Back to Top</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h2>Clear Light Stories</h2>
+        <p>
+          A simple storytelling template focused on low-vision accessibility, readability, and calm visual design.
+        </p>
+      </div>
+
+      <address>
+        <strong>Contact</strong><br />
+        Email: <a href="mailto:hello@example.com">hello@example.com</a><br />
+        Phone: <a href="tel:+620000000000">+62 000 0000 000</a>
+      </address>
+
+      <div>
+        <strong>Accessibility Statement</strong>
+        <p>
+          This template uses semantic HTML, keyboard-friendly navigation, visible focus styles, descriptive image text, and adjustable reading controls.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
